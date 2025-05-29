@@ -172,15 +172,6 @@ footer {
     margin-bottom: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
 .gradient-bg {
     background: linear-gradient(135deg, #115583 0%, #4b4b4b 100%);
     color: white;
@@ -772,7 +763,7 @@ footer {
     transform: none;
 }
 
-/* Resultado do Quiz - Espaçamento Corrigido */
+/* Resultado do Quiz */
 .quiz-result {
     padding: 2rem;
     text-align: center;
@@ -905,7 +896,6 @@ footer {
     }
 }
 
-/* Esconde o hambúrguer em desktop */
 .hamburger {
     display: none;
     background: none;
@@ -919,17 +909,17 @@ footer {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
-        order: 2; /* Coloca o hambúrguer à direita */
+        order: 2; 
     }
     
     .theme-switcher-btn {
         margin-left: 0;
-        order: 1; /* Coloca o botão de tema no meio */
-        display: none; /* Esconde por padrão */
+        order: 1; 
+        display: none; 
     }
     
     .nav-menu.active + .theme-switcher-btn {
-        display: flex; /* Mostra quando o menu está ativo */
+        display: flex; 
         margin: 15px auto;
     }
     
@@ -948,7 +938,9 @@ footer {
         display: flex;
     }
 }
-/* Botão de Troca de Temas - Estilo Uiverse */
+
+
+/* Botão de Troca de Temas */
 .theme-switcher-btn {
     position: relative;
     width: 120px;
