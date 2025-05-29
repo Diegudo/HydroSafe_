@@ -903,3 +903,37 @@ footer {
         width: 90%;
     }
 }
+
+/* Esconde o hambúrguer em desktop */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Mostra o hambúrguer apenas em mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    /* Esconde o menu padrão e prepara para aparecer quando clicado */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px; /* Ajuste conforme a altura da sua navbar */
+        left: 0;
+        width: 100%;
+        background: var(--primary);
+        padding: 1rem 0;
+    }
+    
+    /* Classe que será ativada via JavaScript para mostrar o menu */
+    .nav-menu.active {
+        display: flex;
+    }
+}

@@ -348,3 +348,12 @@ restartBtn.addEventListener('click', () => {
 
 // Iniciar o quiz quando a página carregar
 document.addEventListener('DOMContentLoaded', initQuiz);
+
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+// Alterna o menu ao clicar no ícone
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
