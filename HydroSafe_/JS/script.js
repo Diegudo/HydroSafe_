@@ -350,10 +350,70 @@ restartBtn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', initQuiz);
 
 
+// Menu Hambúrguer (substitua o existente)
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const themeSwitcher = document.querySelector('.theme-switcher-btn');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    themeSwitcher.classList.toggle('active');
+});
+
+// Fechar menu ao clicar em um item
+document.querySelectorAll('.nav-menu a').forEach(item => {
+    item.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        themeSwitcher.classList.remove('active');
+    });
+});
 
 // Alterna o menu ao clicar no ícone
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
+
+
+
+
+
+
+
+// Troca de Temas
+const themeBtn = document.querySelector('.theme-switcher-btn');
+let currentTheme = 'light'; // Tema padrão
+
+// Função para aplicar o tema
+function applyTheme(theme) {
+    document.body.setAttribute('data-theme', theme);
+    
+    // Atualiza o ícone do botão
+    const icon = themeBtn.querySelector('i');
+    if (theme === 'dark') {
+        icon.classList.replace('fa-moon', 'fa-sun');
+    } else if (theme === 'blue') {
+        icon.classList.replace('fa-sun', 'fa-droplet');
+    } else {
+        icon.classList.replace('fa-droplet', 'fa-moon');
+    }
+    
+    // Salva no localStorage
+    localStorage.setItem('theme', theme);
+}
+
+// Alternar entre temas
+function toggleTheme() {
+    const themes = ['light', 'dark', 'blue'];
+    currentTheme = themes[(themes.indexOf(currentTheme) + 1) % themes.length];
+    applyTheme(currentTheme);
+}
+
+// Carregar tema salvo
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    currentTheme = savedTheme;
+}
+applyTheme(currentTheme);
+
+// Evento de clique
+themeBtn.addEventListener('click', toggleTheme);

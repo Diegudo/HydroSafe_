@@ -40,14 +40,15 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
+    margin-left: 720px;
 }
 
 .nav-menu li {
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .nav-menu a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
@@ -456,6 +457,7 @@ footer {
     position: relative;
     overflow: hidden;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .feature-item:hover {
@@ -613,8 +615,7 @@ footer {
 
 
 
-/* Estilos do Quiz com Animações */
-/* Estilos do Quiz com Animações e Espaçamento Corrigido */
+/* Estilos do Quiz com Animações*/
 .quiz-section {
     background-color: var(--primary);
     padding: 5rem 10%;
@@ -628,7 +629,7 @@ footer {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     position: relative;
-    min-height: 400px; /* Altura mais compacta */
+    min-height: 400px; 
 }
 
 .quiz-header {
@@ -918,22 +919,118 @@ footer {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
+        order: 2; /* Coloca o hambúrguer à direita */
     }
     
-    /* Esconde o menu padrão e prepara para aparecer quando clicado */
+    .theme-switcher-btn {
+        margin-left: 0;
+        order: 1; /* Coloca o botão de tema no meio */
+        display: none; /* Esconde por padrão */
+    }
+    
+    .nav-menu.active + .theme-switcher-btn {
+        display: flex; /* Mostra quando o menu está ativo */
+        margin: 15px auto;
+    }
+    
     .nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 80px; /* Ajuste conforme a altura da sua navbar */
+        top: 80px;
         left: 0;
         width: 100%;
         background: var(--primary);
         padding: 1rem 0;
     }
     
-    /* Classe que será ativada via JavaScript para mostrar o menu */
     .nav-menu.active {
         display: flex;
     }
+}
+/* Botão de Troca de Temas - Estilo Uiverse */
+.theme-switcher-btn {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--secondary);
+    background-color: var(--primary);
+    overflow: hidden;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+
+.theme-switcher-btn, 
+.theme-switcher-icon, 
+.theme-switcher-text {
+    transition: all 0.3s ease-in-out;
+}
+
+.theme-switcher-text {
+    transform: translateX(15px);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.theme-switcher-icon {
+    position: absolute;
+    transform: translateX(80px);
+    height: 100%;
+    width: 40px;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.theme-switcher-icon i {
+    font-size: 14px;
+    color: white;
+}
+
+.theme-switcher-btn:hover {
+    background: var(--secondary);
+}
+
+.theme-switcher-btn:hover .theme-switcher-text {
+    color: transparent;
+}
+
+.theme-switcher-btn:hover .theme-switcher-icon {
+    width: 100%;
+    transform: translateX(0);
+    border-radius: 30px;
+}
+
+/* Estilos para os temas */
+[data-theme="light"] {
+    --primary: #2c3e50;
+    --secondary: #3498db;
+    --bg-color: #ecf0f1;
+    --text-color: #1a252f;
+}
+
+[data-theme="dark"] {
+    --primary: #1a252f;
+    --secondary: #2980b9;
+    --bg-color: #2c3e50;
+    --text-color: #ecf0f1;
+}
+
+[data-theme="blue"] {
+    --primary: #115583;
+    --secondary: #4b9cd3;
+    --bg-color: #e9f5ff;
+    --text-color: #0a3d62;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
 }
