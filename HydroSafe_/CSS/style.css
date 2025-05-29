@@ -93,6 +93,16 @@ footer {
     margin-bottom: 3rem;
     color: var(--primary);
 }
+.section.dark {
+    background-color: var(--primary);
+    color: white;
+    font-size: 20px;
+}
+
+.section.dark h2 {
+    color: white;
+}
+
 .stats {
     position: relative;
     display: flex;
@@ -111,7 +121,12 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.459);
     font-size: 20px;
     cursor: pointer;
+    
 }
+.stat:hover {
+    transform: translateY(-20px);
+}
+
 
 .number {
     display: block;
@@ -124,4 +139,32 @@ footer {
 .label {
     font-size: 1rem;
     color: var(--dark);
+}
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tech-card {
+    background-color: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+}
+
+.tech-card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.tech-card h3 {
+    margin-bottom: 1rem;
 }
