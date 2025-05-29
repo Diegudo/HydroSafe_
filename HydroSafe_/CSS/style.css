@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+    transition: all 0.3s ease;
+}
