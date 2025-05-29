@@ -257,3 +257,71 @@ footer {
 .container h2{
     color: white;
 }
+
+
+
+.cards-section {
+    background-color: #f9f9f9;
+}
+
+.audience-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.audience-card {
+    background: #1a252f;
+    border-radius: 15px;
+    padding: 4rem ;
+    width: 460px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    margin-top: 3rem;
+
+}
+
+.audience-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.audience-card h3 {
+    margin-bottom: 15px;
+    color: white;
+    letter-spacing: 2px;
+}
+.publico h2 {
+    color: black;
+} 
+
+.audience-card p {
+    color: #ffffff70;
+    margin-bottom: 20px;
+}
+
+.card-stats {
+    background-color: var(--light);
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+#publico h2{
+    color: #1a252f;
+}
