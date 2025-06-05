@@ -1049,6 +1049,7 @@ footer {
     --secondary: #2980b9;
     --bg-color: #2c3e50;
     --text-color: #ecf0f1;
+    --background-color:#1a252f;
 }
 
 [data-theme="blue"] {
@@ -1058,19 +1059,8 @@ footer {
     --text-color: #0a3d62;
 }
 
-/* Adicione estas regras */
 body {
-    background-color: var(--bg-color);
+
     color: var(--text-color);
+    transition: all 0.3s ease;
 }
-
-header, footer {
-    background-color: var(--primary);
-    color: white;
-}
-
-.nav-menu a {
-    color: white;
-}
-
-/* Mantenha todo o CSS que você já tem */
