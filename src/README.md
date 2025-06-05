@@ -63,6 +63,6 @@ WebDev (Atendidos ✅)
 
 📌 Estrutura de Arquivos
 
-![alt text](image.png)
+![alt text](./Assets/imgs/image.png)
 
 Atualizado em: 29/Junho de 2025
