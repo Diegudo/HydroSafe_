@@ -4,7 +4,7 @@ HydroSafe - Sistema de Alerta de Enchentes
 📌 Visão Geral
 O HydroSafe é uma solução tecnológica para prevenção e alerta de enchentes, utilizando sensores IoT, inteligência artificial e um aplicativo móvel para fornecer alertas precoces a comunidades em risco.
 
-🔗 Link do Projeto: https://github.com/Diegudo/HydroSafe_.git
+🔗 Link do Projeto: https://github.com/HyydroSafe/HydroSafe_.git
 
 🎯 Objetivo
 Reduzir mortes e prejuízos econômicos causados por enchentes no Brasil, oferecendo:
