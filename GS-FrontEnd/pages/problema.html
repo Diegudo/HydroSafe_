@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/GS-FrontEnd/src/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="/GS-FrontEnd/src/Assets/imgs/Logo HydroSafe.png" alt="AlertaEnchente">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/GS-FrontEnd/src/index.html">Inicio</a></li>
+                <li><a href="/GS-FrontEnd/pages/problema.html">Problema</a></li>
+                <li><a href="/GS-FrontEnd/pages/tecnologia.html">Tecnologia</a></li>
+                <li><a href="/GS-FrontEnd/pages/objetivos.html">Objetivos</a></li>
+                <li><a href="/GS-FrontEnd/pages/publico.html">Público</a></li>
+                <li><a href="/GS-FrontEnd/pages/solucao.html">Solução</a></li>
+                <li><a href="/GS-FrontEnd/pages/beneficios.html">Benefícios</a></li>     
+                <li><a href="/GS-FrontEnd/pages/quiz.html">Quiz</a></li>     
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i> <!-- Ícone de 3 linhas (do Font Awesome) -->
+                </button>
+            </ul>
+            <button class="theme-switcher-btn">
+                <span class="theme-switcher-text">Tema</span>
+                <span class="theme-switcher-icon">
+                    <i class="fas fa-moon"></i>
+                </span>
+            </button>
+        </nav>
+    </header>
+    <section id="problema" class="section">
+        <h2>O Problema</h2>
+        <div class="content">
+            <p>3.5 milhões de brasileiros vivem em áreas de
+            <br>risco de enchentes sem acesso a alertas rápidos.</br></p>
+            
+            <p>A falta de sistemas eficazes de prevenção 
+            <br>resulta em perdas humanas e econômicas.</br></p>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <span class="number">5M+</span>
+                <span class="label">Afetados anualmente</span>
+            </div>
+            <div class="stat">
+                <span class="number">R$8bi</span>
+                <span class="label">Prejuízos por ano</span>
+            </div>
+        </div>
+    </section>
+    <section class="slideshow-container">
+        <div class="slide active">
+            <img src="/GS-FrontEnd/src/Assets/imgs/flood1.jpg" alt="Área alagada" style="border-radius: 9px;">
+        </div>
+        <div class="slide">
+            <img src="/GS-FrontEnd/src/Assets/imgs/flood2..jpg" alt="Tecnologia" style="border-radius: 9px;">
+        </div>
+        <div class="slide">
+            <img src="/GS-FrontEnd/src/Assets/imgs/flood3.jpg" alt="Objetivos" style="border-radius: 9px;">
+        </div>
+        <button class="slide-arrow prev">&#10094;</button>
+        <button class="slide-arrow next">&#10095;</button>
+        <div class="slide-nav">
+            <span class="slide-dot active"></span>
+            <span class="slide-dot"></span>
+            <span class="slide-dot"></span>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <p>© 2024 HydroSafe | FIAP Global Solution</p>
+    </footer>
+    <script src="/GS-FrontEnd/src/JS/script.js"></script>
+</body>
+</html>
