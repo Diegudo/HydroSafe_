@@ -3,10 +3,13 @@ const themeBtn = document.querySelector('.theme-switcher-btn');
 let currentTheme = 'light';
 
 function applyTheme(theme) {
+    // Esquema: branco e azul claro viram azul escuro, azul escuro vira branco
     if (theme === 'dark') {
-        document.body.style.backgroundColor = "#2c3e50"; // azul escuro
+        document.body.style.backgroundColor = "#ecf0f1"; // branco
+        document.body.style.color = "#1a252f"; // texto escuro
     } else {
-        document.body.style.backgroundColor = "#ecf0f1"; // branco padrão
+        document.body.style.backgroundColor = "#2c3e50"; // azul escuro
+        document.body.style.color = "#ecf0f1"; // texto claro
     }
     document.body.setAttribute('data-theme', theme);
     if (themeBtn) {

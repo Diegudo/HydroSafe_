@@ -105,7 +105,7 @@ footer {
 .section h2 {
     font-size: 5rem;
     margin-bottom: 1rem;
-    color: var(--primary);
+    color: #2c3e50;
     margin-top: 5rem;
 }
 #solucao h2{
@@ -635,7 +635,7 @@ footer {
 
 /* Estilos do Quiz com Animações*/
 .quiz-section {
-    background-color: white;
+
     margin-top: 20px;
     margin-bottom: 300px;
 }
@@ -1044,13 +1044,154 @@ footer {
     --text-color: #1a252f;
 }
 
-[data-theme="dark"] {
-    --primary: #1a252f;
-    --secondary: #2980b9;
-    --bg-color: #2c3e50;
-    --text-color: #ecf0f1;
-    --background-color:#1a252f;
+/* ...existing code... */
+[data-theme="light"] .tech-card {
+    background-color: #1a252f; /* Azul escuro diferente do fundo */
+    color: #ecf0f1;
 }
+/* tema escuro */
+[data-theme="light"] .stat{
+    background-color: #1a252f;
+}
+[data-theme="light"] .stat{
+    background-color: #1a252f;
+}
+[data-theme="light"] #problema span.label{
+    color: white;
+}
+[data-theme="light"] #publico, #solucao{
+    background-color: #2c3e50;
+}
+[data-theme="light"] .audience-card{
+    background-color: #1a252f;
+}
+
+[data-theme="light"] .feature-item{
+    background-color: #1a252f;
+}
+[data-theme="light"] .benefit-card{
+    background-color: #1a252f;
+}
+[data-theme="light"] .quiz-container{
+    background-color: #1a252f;
+}
+[data-theme="light"] .quiz-header{
+    background-color: #334a5f;
+}
+[data-theme="light"] #problema h2{
+    color: white;
+}
+[data-theme="light"] #question-counter{
+    color: #f7f7f7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tema claro */
+[data-theme="dark"] .quiz-header{
+    background-color: #334a5f;
+}
+[data-theme="light"] #quiz h4{
+    color: #fdfdfd;
+}
+
+[data-theme="dark"] #solucao{
+    background-color: #ffffff;
+}
+[data-theme="dark"] #publico{
+    background-color: #ffffff;
+}
+[data-theme="dark"] #quiz h4{
+    color: #ffffff;
+}
+[data-theme="dark"] #problema h2{
+    color: #2c3e50;
+}
+[data-theme="dark"] #tecnologia h2{
+    color: #2c3e50;
+}
+[data-theme="dark"] #publico h2{
+    color: #2c3e50;
+}
+[data-theme="dark"] #solucao h2{
+    color: #2c3e50;
+}
+[data-theme="dark"] #beneficios h8{
+    color: #2c3e50;
+}
+[data-theme="dark"] #quiz h2{
+    color: #2c3e50;
+}
+[data-theme="dark"] #question-counter{
+    color: #f7f7f7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tema azul */
+
+[data-theme="blue"] #problema h2, #tecnologia h2, #publico h2, #solucao h2, #quiz h2, #beneficios h8 {
+    color: #ffffff;
+}
+[data-theme="blue"]  #solucao, #publico {
+    background-color: #2c3e50;
+}
+[data-theme="blue"] .stat{
+    background-color: #437eb6;
+}
+[data-theme="blue"] #problema span.label{
+    color: white;
+}
+[data-theme="blue"] .quiz-header{
+    background-color: #1b3955;
+}
+[data-theme="blue"] #question-counter{
+    color: #f7f7f7;
+}
+[data-theme="blue"] #quiz h4{
+    color: #ffffff;
+}
+/* ...existing code... */
 
 [data-theme="blue"] {
     --primary: #115583;
